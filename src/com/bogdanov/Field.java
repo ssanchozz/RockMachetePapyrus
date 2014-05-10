@@ -1,9 +1,12 @@
 package com.bogdanov;
 
 public class Field {
-	
+
 	public static final int FIELD_WIDTH = 7;
 	public static final int FIELD_HEIGHT = 7;
+	public static final int FIGHTERS_LINES_COUNT = 2;
+	
+	private int betweenCellsDelta = 10;
 	
 	Cell[][] fieldOfCells = new Cell[FIELD_WIDTH][FIELD_HEIGHT];
 	
@@ -23,4 +26,12 @@ public class Field {
 		this.fieldOfCells = fieldOfCells;
 	}
 
+	public int getCellsDelta() {
+		return betweenCellsDelta;
+	}
+
+	public void setCellsDelta(int cellsDelta) {
+		this.betweenCellsDelta = cellsDelta;
+	}
+	
 }

@@ -2,6 +2,9 @@ package com.bogdanov;
 
 public class Fighter {
 	
+	public static final String ENEMY = "enemy";
+	public static final String FRIEND = "friend";
+	
 	private Weapon currentWeapon;
 	private String warSide;
 	

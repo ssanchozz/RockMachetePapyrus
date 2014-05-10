@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -17,6 +18,8 @@ public class Graphics extends View {
 	private Paint paint, mBitmapPaint;
 	private float canvasSize;
 	private Bitmap droidBitmap;
+	
+	private Field gField;
 	
 	public Graphics(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -54,6 +57,22 @@ public class Graphics extends View {
 		Resources resources = context.getResources();
 		DisplayMetrics metrics = resources.getDisplayMetrics();
 		return dp * (metrics.densityDpi/160f);
+	}
+	
+	//TODO: make realization of methods below
+	
+	public void drawGameField(Field field) {
+	//	RectF rect = new RectF(float left, float top, float right, float bottom);
+		
+	}
+	
+	public void drawCellOfField(Cell cell) {
+		
+	}
+	
+	//TODO: in initGUI() do initialization of all gum-dimensions (cellSize, cellDelta)
+	public void initGUI() {
+		
 	}
 	
 }
