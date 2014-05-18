@@ -1,4 +1,4 @@
-package com.bogdanov;
+package com.bogdanov.logic;
 
 public class Field {
 
@@ -6,7 +6,7 @@ public class Field {
 	public static final int FIELD_HEIGHT = 7;
 	public static final int FIGHTERS_LINES_COUNT = 2;
 	
-	private int betweenCellsDelta = 10;
+	private int betweenCellsDelta = 100;
 	
 	Cell[][] fieldOfCells = new Cell[FIELD_WIDTH][FIELD_HEIGHT];
 	

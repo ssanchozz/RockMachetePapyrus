@@ -2,6 +2,8 @@ package com.bogdanov;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Menu;
 
 public class WarField extends Activity {
@@ -17,6 +19,6 @@ public class WarField extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.war_field, menu);
 		return true;
-	}
-
+	}	
+	
 }

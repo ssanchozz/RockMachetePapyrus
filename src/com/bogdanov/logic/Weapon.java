@@ -1,4 +1,4 @@
-package com.bogdanov;
+package com.bogdanov.logic;
 
 public class Weapon {
 	

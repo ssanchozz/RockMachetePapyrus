@@ -1,19 +1,19 @@
-package com.bogdanov;
+package com.bogdanov.logic;
 
 public class Fighter {
 	
 	public static final String ENEMY = "enemy";
 	public static final String FRIEND = "friend";
 	
-	private Weapon currentWeapon;
+	private Armor currentArmor;
 	private String warSide;
 	
-	public Fighter(Weapon currentWeapon, String warSide) {
-		this.currentWeapon = currentWeapon;
+	public Fighter(Armor currentArmor, String warSide) {
+		this.currentArmor = currentArmor;
 	}
 	
-	public Weapon getCurWeapon() {
-		return this.currentWeapon;
+	public Armor getCurWeapon() {
+		return this.currentArmor;
 	}
 
 	public String getWarSide() {

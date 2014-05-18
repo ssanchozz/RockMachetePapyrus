@@ -1,4 +1,4 @@
-package com.bogdanov;
+package com.bogdanov.logic;
 
 public class GameLogic {
 	
@@ -11,7 +11,7 @@ public class GameLogic {
 		
 		for(int i=0; i<Field.FIELD_WIDTH; i++) {
 			for(int j=0; j<Field.FIELD_HEIGHT; j++) {
-				fieldOfCells[i][j].createFighter(getRandWeapon(i, j), getWarSide(i, j));
+				fieldOfCells[i][j].createFighter(getWarSide(i, j));
 			}
 		}
 	}
@@ -25,10 +25,13 @@ public class GameLogic {
 	    }
 		return null;
 	}	
-	
-	Weapon getRandWeapon(int xCoord, int yCoord) {
-	//TODO: do random generating weapon
-		return new Weapon(Weapon.MACHETE);
+
+	public Field getGfield() {
+		return gfield;
+	}
+
+	public void setGfield(Field gfield) {
+		this.gfield = gfield;
 	}	
 
 }

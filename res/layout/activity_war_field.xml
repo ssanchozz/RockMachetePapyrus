@@ -20,7 +20,7 @@
         android:background="#aaa"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
-    <com.bogdanov.Graphics
+    <com.bogdanov.graphics.Graphics
     	android:layout_width="300dp"
         android:layout_height="300dp"
         android:id="@+id/game_view"
